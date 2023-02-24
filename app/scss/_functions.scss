@@ -1,0 +1,11 @@
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+@function size($fs-name) {
+  @return map-get($font-size, $fs-name);
+}
+
+@function weight($fw-name) {
+  @return map-get($font-weight, $fw-name);
+}

@@ -1,0 +1,22 @@
+.section-2 {
+  display: grid;
+  place-content: center;
+  padding: 10rem 8rem;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 8rem;
+
+    #{&}--title {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__img {
+    img {
+      display: block;
+      margin: auto;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+$bpDesktop-sm-595: 595px;
+@mixin media-desktop-sm-595 {
+  @media screen and (max-width: $bpDesktop-sm-595) {
+    @content;
+  }
+}
+.container {
+  @include media-desktop-sm-595 {
+    p {
+      font-size: size(fs-p-sm);
+    }
+
+    .header {
+      padding: 12rem 5rem 7rem;
+      h1 {
+        font-size: 2.8rem;
+      }
+    }
+
+    .section-1 {
+      &__content {
+        &--text {
+          padding: 8rem 0;
+        }
+      }
+    }
+
+    .section-3 {
+      padding: 0 5rem 12rem;
+    }
+
+    .section-4 {
+      padding: 5rem 7rem;
+    }
+
+    .section-5 {
+      padding: 10rem 4rem;
+    }
+  }
+}

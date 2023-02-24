@@ -1,0 +1,54 @@
+.footer {
+  padding: 3rem;
+  background-color: color(color-footer);
+
+  display: grid;
+  grid-template-columns: minmax(15rem, 1fr) 4fr minmax(15rem, 1fr);
+
+  &__logo {
+    width: 4rem;
+    height: 4rem;
+    place-self: center;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(12rem, 12rem));
+    gap: 1rem 8rem;
+
+    li {
+      font-weight: weight(fw-300);
+      font-size: 1.2rem;
+
+      a:is(:link, :visited) {
+        text-decoration: none;
+        color: color(color-neutral-darkblue);
+      }
+
+      a:is(:hover) {
+        color: color(color-primary-cyan);
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__social {
+    place-self: center start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    font-size: 2rem;
+
+    a:is(:link, :visited) {
+      i {
+        color: color(color-neutral-darkblue);
+      }
+    }
+
+    a:is(:hover, :focus) {
+      i {
+        color: color(color-primary-cyan);
+      }
+    }
+  }
+}

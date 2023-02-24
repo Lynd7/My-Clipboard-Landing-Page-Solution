@@ -1,0 +1,28 @@
+$bpDesktop-lg: 1250px;
+@mixin media-desktop-lg {
+  @media screen and (max-width: $bpDesktop-lg) {
+    @content; // ?? //
+  }
+}
+.container {
+  @include media-desktop-lg {
+    .section-1 {
+      &__content {
+        flex-direction: column;
+        text-align: center;
+
+        &--img {
+          img {
+            transform: translateX(0);
+            width: 80%;
+          }
+        }
+      }
+    }
+    .section-3 {
+      &__tools {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}

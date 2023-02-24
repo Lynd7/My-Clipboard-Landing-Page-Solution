@@ -1,0 +1,39 @@
+$colors: (
+  "color-primary-cyan": hsl(171, 66%, 44%),
+  "color-primary-blue": hsl(233, 100%, 69%),
+  "color-neutral-darkblue": hsl(210, 10%, 33%),
+  "color-neutral-grayblue": hsl(201, 11%, 66%),
+  "color-footer": hsl(220, 18%, 97%),
+  "color-white": #fff,
+);
+
+$font-size: (
+  "fs-h1": 4.5rem,
+  "fs-h2": 3.5rem,
+  "fs-h3": 2.5rem,
+  "fs-p-lg": 2rem,
+  "fs-p-md": 1.8rem,
+  "fs-p-sm": 1.6rem,
+  "fs-btn": 1.8rem,
+);
+
+$font-weight: (
+  "fw-600": 600,
+  "fw-300": 300,
+);
+
+@import "functions";
+@import "utilities";
+
+@import "header";
+@import "section-1";
+@import "section-2";
+@import "section-3";
+@import "section-4";
+@import "section-5";
+@import "footer";
+
+@import "media-lg-1250";
+@import "media-md-900";
+@import "media-md-780";
+@import "media-sm-595";

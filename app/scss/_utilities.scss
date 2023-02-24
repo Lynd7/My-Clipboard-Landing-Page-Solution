@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: size(fs-h1);
+}
+
+h2 {
+  font-size: size(fs-h2);
+}
+
+h3 {
+  font-size: size(fs-h3);
+}
+
+h1,
+h2,
+h3 {
+  color: color(color-neutral-darkblue);
+  font-weight: weight(fw-600);
+}
+
+p {
+  color: color(color-neutral-grayblue);
+  font-size: size(fs-p-lg);
+  font-weight: weight(fw-300);
+  max-width: 70rem;
+  margin: auto;
+}
+
+button {
+  letter-spacing: 1px;
+  padding: 1.5rem 3rem;
+  border-radius: 5rem;
+  color: color(color-white);
+  font-size: size(fs-btn);
+  font-weight: weight(fw-300);
+  border: none;
+}
+
+button:nth-of-type(1) {
+  background-color: color(color-primary-cyan);
+  border-bottom: 3px solid hsl(171, 65%, 28%);
+  box-shadow: 0rem 0.2rem 0.5rem hsl(171, 65%, 28%);
+  margin-right: 1rem;
+}
+
+button:nth-of-type(2) {
+  background-color: color(color-primary-blue);
+  border-bottom: 3px solid hsl(233, 50%, 48%);
+  box-shadow: 0rem 0.2rem 0.5rem hsl(233, 50%, 48%);
+}
+
+button:is(:hover, :active) {
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+body {
+  line-height: 1.8;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  overflow: hidden;
+}

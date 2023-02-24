@@ -1,0 +1,38 @@
+$bpDesktop-md-900: 900px;
+@mixin media-desktop-md-900 {
+  @media screen and (max-width: $bpDesktop-md-900) {
+    @content;
+  }
+}
+
+.container {
+  @include media-desktop-md-900 {
+    .header {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+    .section-3 {
+      &__tools {
+        grid-template-columns: 1fr;
+        place-items: center;
+
+        div:nth-child(2) {
+          place-self: center;
+        }
+
+        div:last-child {
+          place-self: center;
+        }
+      }
+    }
+
+    .footer {
+      ul {
+        grid-template-columns: repeat(2, 14rem);
+        gap: 1.5rem 10rem;
+        margin-left: 4rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.section-3 {
+  padding: 0 12rem 4rem 12rem;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 10rem;
+
+    #{&}--title {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__tools {
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8rem 5rem;
+
+    div:first-child img {
+      height: 3.2rem;
+    }
+
+    div:nth-child(2) {
+      place-self: baseline;
+    }
+
+    div:last-child {
+      place-self: baseline;
+    }
+
+    #{&}--item {
+      max-width: 35rem;
+
+      h3 {
+        margin: 1.5rem;
+      }
+
+      p {
+        font-size: size(fs-p-sm);
+        line-height: 2;
+      }
+    }
+  }
+}
